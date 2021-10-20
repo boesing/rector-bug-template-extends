@@ -7,7 +7,6 @@ namespace Whatever\Foo\Bar;
 use MyCLabs\Enum\Enum;
 
 /**
- * @template-extends Enum<WorkingEnum::*>
  * @psalm-immutable
  */
 final class WorkingEnum extends Enum

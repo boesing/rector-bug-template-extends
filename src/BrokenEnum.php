@@ -16,13 +16,4 @@ final class BrokenEnum extends Enum
     public const BAR = 'bar';
     public const BAZ = 'baz';
     public const QOO = 'qoo';
-
-    /**
-     * @psalm-assert-if-true BrokenEnum::* $value
-     * @psalm-pure
-     */
-    public static function isValid($value): bool
-    {
-        return parent::isValid($value);
-    }
 }
